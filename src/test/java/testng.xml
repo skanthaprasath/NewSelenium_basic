@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="dataprovider.dataprovider"/>
+      <class name="secondTestng.c1"/>
+      <class name="TestngCases.NewTest"/>
+      <class name="TestngCases.secondTest"/>
+      <class name="RT_letcode.TC1"/>
+      <class name="RT_letcode.TC2"/>
+      <class name="secondTestng.c2"/>
+      <class name="RT_letcode.TC3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

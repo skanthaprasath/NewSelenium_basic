@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testchrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="dataprovider.usingxml">
+        <methods>
+          <include name="xdat" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dataprovider.usingxml -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
