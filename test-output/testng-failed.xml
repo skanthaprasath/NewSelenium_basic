@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestDatatc.calling">
+      <class name="RT_SimpleProject.TC1">
         <methods>
-          <include name="met"/>
+          <include name="launch"/>
+          <include name="carti"/>
+          <include name="sectselct"/>
+          <include name="exit"/>
         </methods>
-      </class> <!-- TestDatatc.calling -->
+      </class> <!-- RT_SimpleProject.TC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

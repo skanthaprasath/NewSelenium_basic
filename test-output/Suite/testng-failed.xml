@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Testchrome(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="dataprovider.usingxml">
+      <class name="RT_SimpleProject.TC1">
         <methods>
-          <include name="xdat" invocation-numbers="0"/>
+          <include name="launch"/>
+          <include name="carti"/>
+          <include name="sectselct"/>
+          <include name="exit"/>
         </methods>
-      </class> <!-- dataprovider.usingxml -->
+      </class> <!-- RT_SimpleProject.TC1 -->
     </classes>
-  </test> <!-- Testchrome(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
