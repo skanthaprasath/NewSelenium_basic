@@ -1,11 +1,14 @@
 package RT_SimpleProject;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
+
+import Utility.readmethod;
 
 public class TC1 {
 	WebDriver driver;
@@ -19,9 +22,11 @@ public class TC1 {
 		System.out.println(titletext);
 	}
 	@Test(priority = 0)
-	void login(){
+	void login() throws IOException{
 		POM_class pm=new POM_class(driver);
-		pm.homepage("skantha@gmail.com","qwer");
+		String username = readmethod.uti("sheet1", 3, 0);
+		String pass = readmethod.uti("sheet1", 3, 1);
+		pm.homepage(username,pass);
 	}
 	
 	@Test(priority = 1)
